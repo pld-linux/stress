@@ -1,0 +1,14 @@
+--- stress-0.18.1/doc/stress.texi.orig	2003-05-08 19:28:55.000000000 +0200
++++ stress-0.18.1/doc/stress.texi	2003-10-21 22:44:45.756402024 +0200
+@@ -7,9 +7,9 @@
+ @syncodeindex pg cp
+ @comment %**end of header
+ 
+-@dircategory Stress
++@dircategory Miscellaneous:
+ @direntry
+-* stress: (stress)Invoking stress.
++* stress: (stress)stress.		Stress testing
+ @end direntry
+ 
+ @titlepage
