@@ -7,7 +7,9 @@ License:	GPL
 Group:		Applications
 Source0:	http://weather.ou.edu/~apw/projects/stress/%{name}-%{version}.tar.gz
 # Source0-md5:	6d17ea5e752653021f3f96077541ade7
+Patch0:		%{name}-info.patch
 URL:		http://weather.ou.edu/~apw/projects/stress/
+BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -38,10 +40,12 @@ objawiaj±) przy bardzo obci±¿onym systemie.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 %configure
-%{__make}
+%{__make} \
+	AM_CFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -51,6 +55,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+[ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir %{_infodir} >/dev/null 2>&1
+
+%postun
+[ ! -x /usr/sbin/fix-info-dir ] || /usr/sbin/fix-info-dir %{_infodir} >/dev/null 2>&1
 
 %files
 %defattr(644,root,root,755)
