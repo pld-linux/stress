@@ -1,4 +1,5 @@
-Summary:	A tool which imposes a configurable amount of load on your system.
+Summary:	A tool which imposes a configurable amount of load on your system
+Summary(pl):	Narzêdzie powoduj±ce konfigurowalne obci±¿enie systemu
 Name:		stress
 Version:	0.18.1
 Release:	0.1
@@ -20,6 +21,20 @@ to evaluate how well their systems will scale, by kernel programmers
 to evaluate perceived performance characteristics, and by systems
 programmers to expose the classes of bugs which only or more
 frequently manifest themselves when the system is under heavy load.
+
+%description -l pl
+stress to narzêdzie powoduj±ce konfigurowane obci±¿enie procesora,
+pamiêci, wej¶cia/wyj¶cia lub dysku w systemie operacyjnym
+kompatybilnym z POSIX. Jest napisane w dobrze przeno¶nym ANSI C i
+u¿ywa do kompilacji GNU autotools, aby skompilowaæ siê na du¿ej
+liczbie uniksowych systemów operacyjnych.
+
+stress to nie jest benchmark. To jest narzêdzie u¿ywane przez
+administratorów systemów do okre¶lania, jak ich systemy bêd± siê
+skalowaæ; przez programistów j±dra do okre¶lania odczuwalnej
+charakterystyki wydajno¶ci; przez programistów systemowych do
+ujawniania klas b³êdów, które objawiaj± siê tylko (lub czê¶ciej siê
+objawiaj±) przy bardzo obci±¿onym systemie.
 
 %prep
 %setup -q
