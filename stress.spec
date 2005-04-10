@@ -2,7 +2,7 @@ Summary:	A tool which imposes a configurable amount of load on your system
 Summary(pl):	Narzêdzie powoduj±ce konfigurowalne obci±¿enie systemu
 Name:		stress
 Version:	0.18.2
-Release:	0.1
+Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://weather.ou.edu/~apw/projects/stress/%{name}-%{version}.tar.gz
@@ -13,25 +13,25 @@ BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-stress is a tool which imposes a configurable amount of CPU, memory,
+Stress is a tool which imposes a configurable amount of CPU, memory,
 I/O, or disk stress on a POSIX-compliant operating system. It is
 written in highly-portable ANSI C, and uses the GNU Autotools to
 compile on a great number of UNIX-like operating systems.
 
-stress is not a benchmark. It is a tool used by system administrators
+Stress is not a benchmark. It is a tool used by system administrators
 to evaluate how well their systems will scale, by kernel programmers
 to evaluate perceived performance characteristics, and by systems
 programmers to expose the classes of bugs which only or more
 frequently manifest themselves when the system is under heavy load.
 
 %description -l pl
-stress to narzêdzie powoduj±ce konfigurowane obci±¿enie procesora,
+Stress to narzêdzie powoduj±ce konfigurowane obci±¿enie procesora,
 pamiêci, wej¶cia/wyj¶cia lub dysku w systemie operacyjnym
 kompatybilnym z POSIX. Jest napisane w dobrze przeno¶nym ANSI C i
 u¿ywa do kompilacji GNU autotools, aby skompilowaæ siê na du¿ej
 liczbie uniksowych systemów operacyjnych.
 
-stress to nie jest benchmark. To jest narzêdzie u¿ywane przez
+Stress to nie jest benchmark. To jest narzêdzie u¿ywane przez
 administratorów systemów do okre¶lania, jak ich systemy bêd± siê
 skalowaæ; przez programistów j±dra do okre¶lania odczuwalnej
 charakterystyki wydajno¶ci; przez programistów systemowych do
