@@ -1,13 +1,14 @@
 Summary:	A tool which imposes a configurable amount of load on your system
 Summary(pl):	Narzêdzie powoduj±ce konfigurowalne obci±¿enie systemu
 Name:		stress
-Version:	0.18.6
+Version:	0.18.8
 Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://weather.ou.edu/~apw/projects/stress/%{name}-%{version}.tar.gz
-# Source0-md5:	ff2755d21f12f14fe28f7a0526e0f231
+# Source0-md5:	160d41166d98a1e88c3f95f556633b71
 Patch0:		%{name}-info.patch
+Patch1:		%{name}-fix_build.patch
 URL:		http://weather.ou.edu/~apw/projects/stress/
 BuildRequires:	texinfo
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -41,6 +42,7 @@ objawiaj±) przy bardzo obci±¿onym systemie.
 %prep
 %setup -q
 %patch -p1
+%patch1 -p1
 
 %build
 %configure
