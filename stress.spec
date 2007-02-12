@@ -1,5 +1,5 @@
 Summary:	A tool which imposes a configurable amount of load on your system
-Summary(pl.UTF-8):   Narzędzie powodujące konfigurowalne obciążenie systemu
+Summary(pl.UTF-8):	Narzędzie powodujące konfigurowalne obciążenie systemu
 Name:		stress
 Version:	0.18.9
 Release:	1
