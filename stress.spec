@@ -1,12 +1,12 @@
 Summary:	A tool which imposes a configurable amount of load on your system
 Summary(pl.UTF-8):	Narzędzie powodujące konfigurowalne obciążenie systemu
 Name:		stress
-Version:	0.18.9
+Version:	1.0.0
 Release:	1
 License:	GPL
 Group:		Applications
 Source0:	http://weather.ou.edu/~apw/projects/stress/%{name}-%{version}.tar.gz
-# Source0-md5:	e6fba31fbac8d0a1b359c7e25cba8e3f
+# Source0-md5:	d693ff044ac7d34f8aaea202cd96f679
 Patch0:		%{name}-info.patch
 Patch1:		%{name}-fix_build.patch
 URL:		http://weather.ou.edu/~apw/projects/stress/
