@@ -3,7 +3,7 @@ Summary(pl.UTF-8):	Narzędzie powodujące konfigurowalne obciążenie systemu
 Name:		stress
 Version:	1.0.2
 Release:	1
-License:	GPL
+License:	GPL v3+
 Group:		Applications
 Source0:	http://weather.ou.edu/~apw/projects/stress/%{name}-%{version}.tar.gz
 # Source0-md5:	ad53eb802150bda8f898be9ebf3b4b36
